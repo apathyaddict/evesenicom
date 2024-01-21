@@ -59,7 +59,24 @@ button {
 
 
 
+.NavBarArt {
+  opacity: 0;
+  animation: slideOut 3s ease forwards;
+}
 
+@keyframes slideOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.NavBarArt.hidden {
+  display: none;
+}
 
 .name-div {
   border-bottom: 1px solid rgb(51 65 85);
