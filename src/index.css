@@ -59,7 +59,7 @@ button {
 
 
 
-.NavBarArt {
+/* .NavBarArt {
   opacity: 0;
   animation: slideOut 3s ease forwards;
 }
@@ -76,7 +76,7 @@ button {
 
 .NavBarArt.hidden {
   display: none;
-}
+} */
 
 .name-div {
   border-bottom: 1px solid rgb(51 65 85);

@@ -13,7 +13,11 @@ const NavBarArt = ({ scrollToSection, contactPage, showNavbar }) => {
           </div>
         </div>
         <nav className="flex w-3/4 mx-auto  justify-around py-4 text-slate-700 ">
-          <Link to="/" className=" hover:font-bold">
+          <Link
+            to="/"
+            className="hover:font-bold"
+            onClick={() => handleButtonClick()}
+          >
             Home
           </Link>
           <Link to="/art" className=" hover:font-bold">

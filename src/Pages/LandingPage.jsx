@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import TextTyped from "../Components/TextAnimation/TextTyped";
 
@@ -21,18 +22,22 @@ const LandingPage = ({ handleButtonClick }) => {
 
             <TextTyped />
             <div className=" flex justify-between items-center m-4">
-              <button
-                onClick={() => handleButtonClick()}
-                className="bg-slate-700 text-white rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-slate-900 m-4"
-              >
-                Fullstack developer
-              </button>
-              <button
-                onClick={() => handleButtonClick()}
-                className="bg-white text-slate-700 font-bold rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-slate-900 m-4"
-              >
-                Artist
-              </button>
+              <Link to="/dev">
+                <button
+                  onClick={() => handleButtonClick()}
+                  className="bg-slate-700 text-white rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-slate-900 m-4"
+                >
+                  Fullstack developer
+                </button>
+              </Link>
+              <Link to="/art">
+                <button
+                  onClick={() => handleButtonClick()}
+                  className="bg-white text-slate-700 font-bold rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-slate-900 m-4"
+                >
+                  Artist
+                </button>
+              </Link>
             </div>
           </div>
         </div>
