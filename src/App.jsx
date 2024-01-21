@@ -7,6 +7,7 @@ import MainImageGrid from "./Components/MainImageGrid";
 import PaintingGallery from "./Components/PaintingGallery";
 import WatercolourGallery from "./Components/WatercoloursDiv";
 import LandingPage from "./Pages/LandingPage";
+import HomeDev from "./Pages/HomeDev";
 
 function App() {
   const contactPage = useRef(null);
@@ -19,8 +20,8 @@ function App() {
   };
 
   const [showNavbar, setShowNavbar] = useState(false);
-  const handleButtonClick = () => {
-    setShowNavbar(!showNavbar);
+  const handleButtonClick = (value) => {
+    setShowNavbar(value);
   };
 
   return (
@@ -32,13 +33,14 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<LandingPage handleButtonClick={handleButtonClick} />}
+            element={<LandingPage {...{ handleButtonClick }} />}
           />
 
           <Route path="/art" element={<HomeArt {...{ contactPage }} />} />
           {/* <Route path="/prints" element={<MainImageGrid />} /> */}
           <Route path="/prints" element={<WatercolourGallery />} />
           <Route path="/paintings" element={<PaintingGallery />} />
+          <Route path="/dev" element={<HomeDev {...{ handleButtonClick }} />} />
         </Routes>
       </BrowserRouter>
     </>
