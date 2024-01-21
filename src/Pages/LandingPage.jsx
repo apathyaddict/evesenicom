@@ -24,7 +24,7 @@ const LandingPage = ({ handleButtonClick }) => {
             <div className=" flex justify-between items-center m-4">
               <Link to="/dev">
                 <button
-                  onClick={() => handleButtonClick()}
+                  onClick={() => handleButtonClick(false)}
                   className="bg-slate-700 text-white rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-slate-900 m-4"
                 >
                   Fullstack developer
@@ -32,7 +32,7 @@ const LandingPage = ({ handleButtonClick }) => {
               </Link>
               <Link to="/art">
                 <button
-                  onClick={() => handleButtonClick()}
+                  onClick={() => handleButtonClick(true)}
                   className="bg-white text-slate-700 font-bold rounded-full px-4 py-2 transition duration-300 ease-in-out hover:bg-slate-900 m-4"
                 >
                   Artist

@@ -20,8 +20,8 @@ function App() {
   };
 
   const [showNavbar, setShowNavbar] = useState(false);
-  const handleButtonClick = () => {
-    setShowNavbar(!showNavbar);
+  const handleButtonClick = (value) => {
+    setShowNavbar(value);
   };
 
   return (
@@ -40,7 +40,7 @@ function App() {
           {/* <Route path="/prints" element={<MainImageGrid />} /> */}
           <Route path="/prints" element={<WatercolourGallery />} />
           <Route path="/paintings" element={<PaintingGallery />} />
-          <Route path="/dev" element={<HomeDev />} />
+          <Route path="/dev" element={<HomeDev {...{ handleButtonClick }} />} />
         </Routes>
       </BrowserRouter>
     </>
