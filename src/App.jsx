@@ -1,7 +1,7 @@
 import HomeArt from "./Pages/HomeArt";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import NavBarArt from "./Components/NavBarArt";
 import MainImageGrid from "./Components/MainImageGrid";
 import PaintingGallery from "./Components/PaintingGallery";
@@ -17,12 +17,23 @@ function App() {
       behavior: "smooth",
     });
   };
+
+  const [showNavbar, setShowNavbar] = useState(false);
+  const handleButtonClick = () => {
+    setShowNavbar(!showNavbar);
+  };
+
   return (
     <>
       <BrowserRouter>
-        <NavBarArt {...{ scrollToSection, contactPage }} />
+        {showNavbar && (
+          <NavBarArt {...{ scrollToSection, contactPage, showNavbar }} />
+        )}
         <Routes>
-          <Route path="/" element={<LandingPage />} />
+          <Route
+            path="/"
+            element={<LandingPage handleButtonClick={handleButtonClick} />}
+          />
 
           <Route path="/art" element={<HomeArt {...{ contactPage }} />} />
           {/* <Route path="/prints" element={<MainImageGrid />} /> */}
