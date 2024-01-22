@@ -13,9 +13,9 @@ const ContactDev = () => {
           </h1>
         </div>
 
-        <div className="max-w-[1000px]   mx-auto flex-1 flex justify-start  h-full w-full ">
-          <div className="flex-1  items-center m-4">
-            <h2 className="text-2 mt-4">
+        <div className="max-w-[1000px]   mx-auto flex-1 flex flex-col sm:flex-row justify-start  h-full w-full  ">
+          <div className="flex-1  items-center m-4 ">
+            <h2 className="text-2 mt-4 ">
               <TbMessageLanguage className="inline icon h-6 w-6  text-slate-70" />{" "}
               <span>Bilingual : English / French</span>
             </h2>
