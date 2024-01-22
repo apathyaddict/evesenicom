@@ -5,10 +5,11 @@ const Maindev = () => {
   return (
     <div
       name="home"
-      className="flex h-screen lg:flex-row md:flex-col sm:flex-col items-center justify-center mb-2 lg:mb-0  "
+      className="flex h-screen lg:flex-row md:flex-col sm:flex-col items-center justify-center mb-2 lg:mb-0 
+      "
     >
       <div
-        className=" flex lg:flex-row md:flex-col sm:flex-col flex-col h-5/6 w-full
+        className=" flex lg:flex-row md:flex-col sm:flex-col flex-col h-5/6 w-5/6 b\
      
       "
       >
@@ -20,7 +21,7 @@ const Maindev = () => {
           />
         </div>
 
-        <div className=" flex-1 h-full flex  justify-center items-center ">
+        <div className=" flex-1 h-full flex  justify-center items-center lg:p-4 ">
           <div className="flex flex-col justify-center items-center m-3 ">
             <p className="lg:pb-4 pb-2 mt-2 lg:text-xl md:text-lg sm:text-sm text-sm">
               Hello, I'm

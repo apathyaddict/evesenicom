@@ -27,14 +27,15 @@ const Navbardev = () => {
               </ScrollLink>
             </li>
             <li className="nav-li ">
-              Contact
               <ScrollLink
-                to="contact"
+                to="contactDev"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
-              ></ScrollLink>
+              >
+                Contact
+              </ScrollLink>
             </li>
             <li className="nav-li ">
               <Link to="/art">Art Portfolio</Link>
@@ -63,7 +64,7 @@ const Navbardev = () => {
         <ScrollLink to="projects" spy={true} smooth={true}>
           <li className="py-6 text-4xl cursor-pointer">Projects</li>
         </ScrollLink>
-        <ScrollLink to="contact" spy={true} smooth={true}>
+        <ScrollLink to="contactDev" spy={true} smooth={true}>
           <li className="py-6 text-4xl cursor-pointer">Contact</li>
         </ScrollLink>
         <Link to="/art">

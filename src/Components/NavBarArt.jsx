@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBarArt = ({ scrollToSection, contactPage }) => {
   const [navDev, setNavDev] = useState(false);
@@ -34,6 +34,13 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
               Home
             </Link>
 
+            {({ isActive }) => (
+              <li className={isActive ? "nav-link-active" : "link nav-link"}>
+                {" "}
+                Home
+              </li>
+            )}
+
             <Link
               to="/art/prints"
               onClick={handleLinkClick}
@@ -61,22 +68,31 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
         )}
 
         <nav className="hidden lg:flex w-3/4 mx-auto justify-around py-4 text-slate-700 menuart">
-          <Link to="/art" className="hover:font-bold">
+          <NavLink to="/art" className="hover:font-bold">
             Home
-          </Link>
+          </NavLink>
 
-          <Link to="/art/prints" className="hover:font-bold">
-            Prints and Watercolours
-          </Link>
-          <Link to="/art/paintings" className="hover:font-bold">
-            Paintings
-          </Link>
+          <NavLink to="/art/prints" className="hover:font-bold">
+            {({ isActive }) => (
+              <a className={isActive ? "font-bold" : ""}>
+                {" "}
+                Prints and Watercolours
+              </a>
+            )}
+          </NavLink>
+
+          <NavLink to="/art/paintings" className="hover:font-bold">
+            {({ isActive }) => (
+              <a className={isActive ? "font-bold" : ""}> Paintings</a>
+            )}
+          </NavLink>
           <Link
             onClick={() => scrollToSection(contactPage)}
             className="hover:font-bold"
           >
             Contact
           </Link>
+
           <Link to="/dev" className="hover:font-bold">
             Coding
           </Link>

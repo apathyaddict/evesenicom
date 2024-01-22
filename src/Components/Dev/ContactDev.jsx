@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 
 const ContactDev = () => {
   return (
-    <section name="contact" className="py-10  ">
+    <section name="contactDev" className="py-10  ">
       <div className=" h-full text-slate-700 m-6 mb-10 flex  flex-col justify-center ">
         <div className=" max-w-[1000px] p-4  mx-auto flex-1 flex justify-start  h-full w-full ">
           <h1 className="text-4xl  inline border-b-4  text-slate-700 border-bluegreen">

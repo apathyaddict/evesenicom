@@ -1,16 +1,9 @@
 import React, { useState } from "react";
 import "../CSS/gallery.css";
 import { IoMdClose } from "react-icons/io";
+import { paintings } from "../data/paintings";
 
 const PaintingGallery = () => {
-  const data = [
-    "/images/gridphotos/1.jpg",
-    "images/gridphotos/2.jpg",
-    "images/gridphotos/3.jpg",
-    "images/gridphotos/4.jpg",
-    "images/gridphotos/5.jpg",
-  ];
-
   const [modal, setmodal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
 
@@ -19,6 +12,8 @@ const PaintingGallery = () => {
     setmodal(true);
   };
 
+  const sortedPaintings = paintings.slice().sort((a, b) => a.id - b.id);
+
   return (
     <>
       <div className={modal ? "modal open" : "modal"}>
@@ -26,15 +21,15 @@ const PaintingGallery = () => {
         <IoMdClose onClick={() => setmodal(false)} />
       </div>
 
-      <div className="galleryPainting">
-        {data.map((item, index) => {
+      <div className="galleryPainting w-3/4  mx-auto pt-6">
+        {paintings.map((item, index) => {
           return (
-            <div className="pics" key={index} onClick={() => getImg(item)}>
-              <img
-                src={item}
-                alt={`Painting ${index + 1}`}
-                style={{ width: "100%" }}
-              />
+            <div
+              className="pics"
+              key={index}
+              onClick={() => getImg(item.image)}
+            >
+              <img src={item.image} alt={item.name} style={{ width: "100%" }} />
             </div>
           );
         })}

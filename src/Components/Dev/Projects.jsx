@@ -2,9 +2,7 @@ import React from "react";
 import { data } from "../../data/projects";
 
 const Projects = () => {
-  // projects file
   const project = data;
-  //setProject(data);
 
   return (
     <div
