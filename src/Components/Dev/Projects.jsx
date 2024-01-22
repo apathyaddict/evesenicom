@@ -20,14 +20,14 @@ const Projects = () => {
         </div>
 
         {/* container for projects */}
-        <div className="flex-1 grid h-[250px] lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="flex-1 grid h-[250px] lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-6 cursor-pointer">
           {/* Gird Item */}
           {project.map((item, index) => (
             <div
               key={index}
               style={{
                 backgroundImage: `url(${item.image})`,
-                backgroundSize: "cover",
+                backgroundSize: "fit",
               }}
               className="shadow-md group container 
               flex justify-center text-center items-center mx-auto content-div "
@@ -44,8 +44,8 @@ const Projects = () => {
                   {/* eslint-disable-next-line */}
                   <a href={item.github} target="_blank">
                     <button
-                      className="text-center text-slate-700 rounded-full px-4 py-3 m-2
-                       bg-white font-bold text-lg"
+                      className="text-center text-white rounded-full px-4 py-3 m-2
+                       bg-slate-700 font-bold text-lg"
                     >
                       Code
                     </button>
@@ -55,7 +55,7 @@ const Projects = () => {
                     <a href={item.live} target="_blank">
                       <button
                         className="text-center rounded-full px-5 py-3 m-2
-                       bg-white text-gray-700 font-bold text-lg hover:shadow-sm"
+                       bg-slate-700 text-white font-bold text-lg hover:shadow-sm"
                       >
                         Live
                       </button>

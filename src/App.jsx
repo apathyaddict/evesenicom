@@ -31,7 +31,8 @@ function App() {
               <NavBarArt />
               <Routes>
                 <Route path="/" element={<HomeArt {...{ contactPage }} />} />
-                <Route path="/prints" element={<WatercolourGallery />} />
+                {/* <Route path="/prints" element={<WatercolourGallery />} /> */}
+                <Route path="/prints" element={<MainImageGrid />} />
                 <Route path="/paintings" element={<PaintingGallery />} />
               </Routes>
             </>
