@@ -14,13 +14,13 @@ const HomeArt = ({ contactPage }) => {
           }}
         >
           <div
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white portofolio"
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white portofolio z-20"
             style={{ top: "65%", left: "50%" }}
           >
             <h3 className="drop-shadow">PORTFOLIO </h3>
           </div>
         </div>
-        {/* <div className="flex-1 w-full p-3  bg-beige flex items-center justify-center"> */}
+
         <div>
           <CarousselSmall />
         </div>

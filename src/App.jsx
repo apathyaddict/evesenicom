@@ -1,49 +1,56 @@
-import HomeArt from "./Pages/HomeArt";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import React from "react";
-import { useRef, useState } from "react";
+import React, { useRef } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBarArt from "./Components/NavBarArt";
 import MainImageGrid from "./Components/MainImageGrid";
 import PaintingGallery from "./Components/PaintingGallery";
 import WatercolourGallery from "./Components/WatercoloursDiv";
 import LandingPage from "./Pages/LandingPage";
 import HomeDev from "./Pages/HomeDev";
+import Navbardev from "./Components/Dev/Navbardev";
+import HomeArt from "./Pages/HomeArt";
 
 function App() {
   const contactPage = useRef(null);
 
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
-
-  const [showNavbar, setShowNavbar] = useState(false);
-  const handleButtonClick = (value) => {
-    setShowNavbar(value);
-  };
-
   return (
-    <>
-      <BrowserRouter>
-        {showNavbar && (
-          <NavBarArt {...{ scrollToSection, contactPage, showNavbar }} />
-        )}
-        <Routes>
-          <Route
-            path="/"
-            element={<LandingPage {...{ handleButtonClick }} />}
-          />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <LandingPage />
+            </>
+          }
+        />
 
-          <Route path="/art" element={<HomeArt {...{ contactPage }} />} />
-          {/* <Route path="/prints" element={<MainImageGrid />} /> */}
-          <Route path="/prints" element={<WatercolourGallery />} />
-          <Route path="/paintings" element={<PaintingGallery />} />
-          <Route path="/dev" element={<HomeDev {...{ handleButtonClick }} />} />
-        </Routes>
-      </BrowserRouter>
-    </>
+        <Route
+          path="/art/*"
+          element={
+            <>
+              <NavBarArt />
+              <Routes>
+                <Route path="/" element={<HomeArt {...{ contactPage }} />} />
+                <Route path="/prints" element={<WatercolourGallery />} />
+                <Route path="/paintings" element={<PaintingGallery />} />
+              </Routes>
+            </>
+          }
+        />
+
+        <Route
+          path="/dev/*"
+          element={
+            <>
+              <Navbardev />
+              <Routes>
+                <Route path="/" element={<HomeDev />} />
+              </Routes>
+            </>
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
