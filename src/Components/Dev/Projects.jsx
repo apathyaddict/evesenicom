@@ -41,7 +41,7 @@ const Projects = () => {
                   <a href={item.github} target="_blank">
                     <button
                       className="text-center text-white rounded-full px-4 py-3 m-2
-                       bg-slate-700 font-bold text-lg"
+                       bg-slate-700 font-bold text-lg hover:shadow-lg hover:bg-slate-600"
                     >
                       Code
                     </button>
@@ -51,7 +51,7 @@ const Projects = () => {
                     <a href={item.live} target="_blank">
                       <button
                         className="text-center rounded-full px-5 py-3 m-2
-                       bg-slate-700 text-white font-bold text-lg hover:shadow-sm"
+                       bg-slate-700 text-white font-bold text-lg hover:shadow-lg hover:bg-slate-600"
                       >
                         Live
                       </button>

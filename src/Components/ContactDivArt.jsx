@@ -15,22 +15,28 @@ const ContactDivArt = ({ contactPage }) => {
         <h3 className="md:text-5xl  sm:m-2 sm:p-2 text-4xl p-2">CONTACT</h3>
 
         <div>
-          <p className="p-3">
-            <FaStoreAlt className="inline mr-4" />
-            <a href="https://society6.com/femalesaint" target="_blank">
-              society6
-            </a>
-          </p>
-          <p className="p-3">
-            <FaInstagram className="inline mr-2" />
-            <a href="https://www.instagram.com/female.saint/" target="_blank">
-              instagram
-            </a>
-          </p>
-          <p className="p-3">
-            <FaEnvelope className="inline mr-2" />
-            <a href="eveseniart@gmail.com">email</a>
-          </p>
+          <div className="hover:text-darkbeige hover:scale-125">
+            <p className="p-3 ">
+              <FaStoreAlt className="inline mr-4 " />
+              <a href="https://society6.com/femalesaint" target="_blank">
+                society6
+              </a>
+            </p>
+          </div>
+          <div className="hover:text-darkbeige hover:scale-125">
+            <p className="p-3">
+              <FaInstagram className="inline mr-2" />
+              <a href="https://www.instagram.com/female.saint/" target="_blank">
+                instagram
+              </a>
+            </p>
+          </div>
+          <div className="hover:text-darkbeige hover:scale-125">
+            <p className="p-3">
+              <FaEnvelope className="inline mr-2" />
+              <a href="eveseniart@gmail.com">email</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
