@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBarArt = ({ scrollToSection, contactPage }) => {
   const [navDev, setNavDev] = useState(false);
   const handleClick = () => setNavDev(!navDev);
+  const handleLinkClick = () => setNavDev(false);
 
   return (
     <>
@@ -26,21 +27,36 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
           {!navDev ? <FaBars size={24} /> : <FaTimes size={24} />}
         </div>
 
+        {/* MOBILE MENU */}
         {navDev && (
           <ul className="lg:hidden absolute top-0 right-0 h-screen w-full flex flex-col justify-center items-center bg-beige text-slate-700 ">
-            <Link to="/" className="hover:font-bold py-6 text-4xl">
+            <Link to="/art" className="hover:font-bold py-6 text-4xl">
               Home
             </Link>
-            {/* <Link to="/art" className="hover:font-bold py-6 text-4xl">
-              Art Portfolio
-            </Link> */}
-            <Link to="/art/prints" className="hover:font-bold py-6 text-4xl">
+
+            {({ isActive }) => (
+              <li className={isActive ? "nav-link-active" : "link nav-link"}>
+                {" "}
+                Home
+              </li>
+            )}
+
+            <Link
+              to="/art/prints"
+              onClick={handleLinkClick}
+              className="hover:font-bold py-6 text-4xl"
+            >
               Prints and Watercolours
             </Link>
-            <Link to="/art/paintings" className="hover:font-bold py-6 text-4xl">
+            <Link
+              to="/art/paintings"
+              onClick={handleLinkClick}
+              className="hover:font-bold py-6 text-4xl"
+            >
               Paintings
             </Link>
             <Link
+              to="/art"
               onClick={() => scrollToSection(contactPage)}
               className="hover:font-bold py-6 text-4xl"
             >
@@ -53,26 +69,34 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
         )}
 
         <nav className="hidden lg:flex w-3/4 mx-auto justify-around py-4 text-slate-700 menuart">
-          <Link to="/" className="hover:font-bold">
-            Home
-          </Link>
-          {/* <Link to="/art" className="hover:font-bold">
-            Art Portfolio
-          </Link> */}
-          <Link to="/art/prints" className="hover:font-bold">
-            Prints and Watercolours
-          </Link>
-          <Link to="/art/paintings" className="hover:font-bold">
-            Paintings
-          </Link>
+          <NavLink to="/art" className="hover:font-bold">
+            <h2> Home</h2>
+          </NavLink>
+
+          <NavLink to="/art/prints" className="hover:font-bold">
+            {({ isActive }) => (
+              <h2 className={isActive ? " font-bold" : ""}>
+                {" "}
+                Prints and Watercolours
+              </h2>
+            )}
+          </NavLink>
+
+          <NavLink to="/art/paintings" className="hover:font-bold">
+            {({ isActive }) => (
+              <h2 className={isActive ? " font-bold" : ""}> Paintings</h2>
+            )}
+          </NavLink>
           <Link
+            to="/art"
             onClick={() => scrollToSection(contactPage)}
             className="hover:font-bold"
           >
-            Contact
+            <h2>Contact</h2>
           </Link>
+
           <Link to="/dev" className="hover:font-bold">
-            Coding
+            <h2>Coding</h2>
           </Link>
         </nav>
       </section>

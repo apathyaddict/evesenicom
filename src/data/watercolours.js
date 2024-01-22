@@ -164,7 +164,8 @@ export const watercolours = [
     id: 24,
     name: " Pirogues and Rock Island  ",
 
-    image: " EvePortfolio/Watercolours/di2mehdhdddkgvzegrop ",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/di2mehdhdddkgvzegrop",
   },
   {
     id: 25,

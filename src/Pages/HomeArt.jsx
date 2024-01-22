@@ -33,18 +33,18 @@ const HomeArt = ({ contactPage }) => {
             backgroundPosition: "center",
           }}
         ></div>
-        <div className="flex-1 w-full lg:p-20 md:p-3 sm:p-3 bg-darkbeige flex">
+        <div className="flex-1 w-full p-8 lg:p-20 bg-darkbeige flex">
           <div className="flex-auto items-center justify-center text-center text-beige m-4 div-half">
             <h2 className="text-2xl font-bold ">Raison d'être</h2>
-            <p className="pt-4">
+            <p className="pt-4 text-sm md:text-md lg:text-lg">
               ​ Years ago, I stood in front of Caillobotte's Les raboteurs de
               parquets in the Musée d'Orsay and it changed me.
             </p>
-            <p className="mt-4">
+            <p className="mt-4 text-sm md:text-md lg:text-lg">
               Everything I began creating since that day has been in hope of
               recreating that moment of transcendence for someone else.{" "}
             </p>
-            <p className="mt-4">
+            <p className="mt-4 text-sm md:text-md lg:text-lg">
               ​Or simply, I make art inspired by places, history, and
               literature.{" "}
             </p>

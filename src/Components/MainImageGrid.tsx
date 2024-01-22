@@ -1,27 +1,54 @@
 import { watercolours } from "../data/watercolours";
-import React from "react";
+import React, { useState } from "react";
+import "../CSS/gallery.css";
+import { IoMdClose } from "react-icons/io";
 
 const MainImageGrid = () => {
+  const [modal, setmodal] = useState(false);
+  const [tempImgSrc, setTempImgSrc] = useState({});
+
+  const getImg = (item) => {
+    if (window.innerWidth > 768) {
+      setTempImgSrc(item);
+      setmodal(true);
+    }
+  };
   return (
-    <div
-      className="flex flex-wrap justify-between  align-center text-center 
-    w-full"
-    >
-      {watercolours.map((item, index) => (
-        <div
-          key={index}
-          style={{ height: "22rem", width: "22rem", marginBottom: "0.5rem" }}
-          className=" align-left "
-        >
-          <img
-            src={item.image}
-            alt={item.name}
-            className="w-full h-full object-cover overlay"
-            style={{ objectFit: "cover", objectPosition: "center center" }}
-          />
-        </div>
-      ))}
-    </div>
+    <>
+      <div className={modal ? "modal open" : "modal"}>
+        {tempImgSrc && (
+          <>
+            {" "}
+            <div className="flex justify-center items-center w-3/4">
+              <p className="m-2 text-lg">{tempImgSrc.name}</p>
+
+              <img src={tempImgSrc.image} />
+            </div>
+            <IoMdClose onClick={() => setmodal(false)} />
+          </>
+        )}
+      </div>
+
+      <div
+        className="flex flex-wrap justify-between  align-center text-center 
+    w-full "
+      >
+        {watercolours.map((item, index) => (
+          <div
+            key={index}
+            className=" align-left md:cursor-pointer lg:w-1/4 lg:h-1/4 sm:w-1/2 sm:h-1/2 md:w-1/3 md:h-1/3  p-2 aspect-square"
+            onClick={() => getImg(item)}
+          >
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-full h-full object-cover overlay"
+              style={{ objectFit: "cover", objectPosition: "center center" }}
+            />
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
