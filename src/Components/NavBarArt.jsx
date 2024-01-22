@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const NavBarArt = ({ scrollToSection, contactPage }) => {
   const [navDev, setNavDev] = useState(false);
   const handleClick = () => setNavDev(!navDev);
+  const handleLinkClick = () => setNavDev(false);
 
   return (
     <>
@@ -26,18 +27,25 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
           {!navDev ? <FaBars size={24} /> : <FaTimes size={24} />}
         </div>
 
+        {/* MOBILE MENU */}
         {navDev && (
           <ul className="lg:hidden absolute top-0 right-0 h-screen w-full flex flex-col justify-center items-center bg-beige text-slate-700 ">
-            <Link to="/" className="hover:font-bold py-6 text-4xl">
+            <Link to="/art" className="hover:font-bold py-6 text-4xl">
               Home
             </Link>
-            {/* <Link to="/art" className="hover:font-bold py-6 text-4xl">
-              Art Portfolio
-            </Link> */}
-            <Link to="/art/prints" className="hover:font-bold py-6 text-4xl">
+
+            <Link
+              to="/art/prints"
+              onClick={handleLinkClick}
+              className="hover:font-bold py-6 text-4xl"
+            >
               Prints and Watercolours
             </Link>
-            <Link to="/art/paintings" className="hover:font-bold py-6 text-4xl">
+            <Link
+              to="/art/paintings"
+              onClick={handleLinkClick}
+              className="hover:font-bold py-6 text-4xl"
+            >
               Paintings
             </Link>
             <Link
@@ -53,12 +61,10 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
         )}
 
         <nav className="hidden lg:flex w-3/4 mx-auto justify-around py-4 text-slate-700 menuart">
-          <Link to="/" className="hover:font-bold">
+          <Link to="/art" className="hover:font-bold">
             Home
           </Link>
-          {/* <Link to="/art" className="hover:font-bold">
-            Art Portfolio
-          </Link> */}
+
           <Link to="/art/prints" className="hover:font-bold">
             Prints and Watercolours
           </Link>

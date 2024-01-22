@@ -19,15 +19,13 @@ const Projects = () => {
           <p className="py-6">Here are some of my projects and works:</p>
         </div>
 
-        {/* container for projects */}
         <div className="flex-1 grid h-[250px] lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-6 cursor-pointer">
-          {/* Gird Item */}
           {project.map((item, index) => (
             <div
               key={index}
               style={{
                 backgroundImage: `url(${item.image})`,
-                backgroundSize: "fit",
+                backgroundSize: "cover",
               }}
               className="shadow-md group container 
               flex justify-center text-center items-center mx-auto content-div "

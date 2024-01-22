@@ -10,7 +10,7 @@ const ContactDivArt = ({ contactPage }) => {
       <img className="imageBargue h-1/2" src="/public/images/testbargue.jpg" />
 
       <div className="flex-1 text-slate-700 flex flex-col justify-center items-center">
-        <h3 className="text-5xl mb-7 sm:m-2 sm:p-2 sm:text-2xl">CONTACT</h3>
+        <h3 className="md:text-5xl  sm:m-2 sm:p-2 text-4xl p-2">CONTACT</h3>
 
         <div>
           <p className="p-3">

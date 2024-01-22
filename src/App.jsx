@@ -12,6 +12,13 @@ import HomeArt from "./Pages/HomeArt";
 function App() {
   const contactPage = useRef(null);
 
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <BrowserRouter>
       <Routes>
@@ -28,7 +35,7 @@ function App() {
           path="/art/*"
           element={
             <>
-              <NavBarArt />
+              <NavBarArt {...{ scrollToSection, contactPage }} />
               <Routes>
                 <Route path="/" element={<HomeArt {...{ contactPage }} />} />
                 {/* <Route path="/prints" element={<WatercolourGallery />} /> */}
