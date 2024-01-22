@@ -18,19 +18,13 @@ const Navbardev = () => {
 
         <nav className="w-full">
           <ul className="dev-nav hidden md:flex items-center w-3/4 mx-auto justify-around py-4 text-slate-700">
-            <li>
-              <ScrollLink
-                activeClass="active"
-                to="home"
-                smooth={true}
-                offset={50}
-              >
+            <li className="nav-li hover:font-bold">
+              <ScrollLink to="home" spy={true} smooth={true} offset={50}>
                 Home
               </ScrollLink>
             </li>
-            <li>
+            <li className="nav-li ">
               <ScrollLink
-                activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -41,16 +35,15 @@ const Navbardev = () => {
               </ScrollLink>
             </li>
             <ScrollLink
-              // activeClass="active"
               to="contact"
               spy={true}
               smooth={true}
               offset={50}
               duration={500}
             >
-              <li>Contact</li>
+              <li className="nav-li ">Contact</li>
             </ScrollLink>
-            <li>
+            <li className="nav-li ">
               <Link to="/art">Art Portfolio</Link>
             </li>
           </ul>

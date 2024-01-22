@@ -26,7 +26,7 @@ const Maindev = () => {
               </h2>
               <p>
                 With a passion for art, culture and learning. Here you will find{" "}
-                <em className="text-pink-500"> my projects and my skills. </em>
+                <em className="text-[#32CCBC]"> my projects and my skills. </em>
                 If you want to discover my paintings head to the art section.
               </p>
             </div>
