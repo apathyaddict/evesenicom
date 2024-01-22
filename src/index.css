@@ -41,8 +41,10 @@ p {
   font-size: 1rem;
 }
 
-a {
+a,
+.link-art-nav {
   font-family: 'Comfortaa', sans-serif;
+  letter-spacing: 0.06rem;
 }
 
 button {
@@ -136,7 +138,7 @@ button {
 .slick-next:before {
   color: #636458;
   size: 3rem;
-  background-color: white;
+
   font-size: 22px;
 
 }

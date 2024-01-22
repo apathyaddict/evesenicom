@@ -4,12 +4,12 @@ import { IoMdClose } from "react-icons/io";
 import { paintings } from "../data/paintings";
 
 const PaintingGallery = () => {
-  const [modal, setmodal] = useState(false);
+  const [modal, setModal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
 
-  const getImg = (ImgSrc) => {
-    setTempImgSrc(ImgSrc);
-    setmodal(true);
+  const getImg = (imgSrc) => {
+    setTempImgSrc(imgSrc);
+    setModal(true);
   };
 
   const sortedPaintings = paintings.slice().sort((a, b) => a.id - b.id);
@@ -17,22 +17,20 @@ const PaintingGallery = () => {
   return (
     <>
       <div className={modal ? "modal open" : "modal"}>
-        <img src={tempImgSrc} />
-        <IoMdClose onClick={() => setmodal(false)} />
+        <img src={tempImgSrc} alt="modal" />
+        <IoMdClose onClick={() => setModal(false)} />
       </div>
 
       <div className="galleryPainting w-3/4  mx-auto pt-6">
-        {paintings.map((item, index) => {
-          return (
-            <div
-              className="pics"
-              key={index}
-              onClick={() => getImg(item.image)}
-            >
-              <img src={item.image} alt={item.name} style={{ width: "100%" }} />
-            </div>
-          );
-        })}
+        {sortedPaintings.map((item) => (
+          <div
+            className="pics"
+            key={item.id}
+            onClick={() => getImg(item.image)}
+          >
+            <img src={item.image} alt={item.name} style={{ width: "100%" }} />
+          </div>
+        ))}
       </div>
     </>
   );

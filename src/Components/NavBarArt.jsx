@@ -56,6 +56,7 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
               Paintings
             </Link>
             <Link
+              to="/art"
               onClick={() => scrollToSection(contactPage)}
               className="hover:font-bold py-6 text-4xl"
             >
@@ -69,32 +70,33 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
 
         <nav className="hidden lg:flex w-3/4 mx-auto justify-around py-4 text-slate-700 menuart">
           <NavLink to="/art" className="hover:font-bold">
-            Home
+            <h2> Home</h2>
           </NavLink>
 
           <NavLink to="/art/prints" className="hover:font-bold">
             {({ isActive }) => (
-              <a className={isActive ? "font-bold" : ""}>
+              <h2 className={isActive ? " font-bold" : ""}>
                 {" "}
                 Prints and Watercolours
-              </a>
+              </h2>
             )}
           </NavLink>
 
           <NavLink to="/art/paintings" className="hover:font-bold">
             {({ isActive }) => (
-              <a className={isActive ? "font-bold" : ""}> Paintings</a>
+              <h2 className={isActive ? " font-bold" : ""}> Paintings</h2>
             )}
           </NavLink>
           <Link
+            to="/art"
             onClick={() => scrollToSection(contactPage)}
             className="hover:font-bold"
           >
-            Contact
+            <h2>Contact</h2>
           </Link>
 
           <Link to="/dev" className="hover:font-bold">
-            Coding
+            <h2>Coding</h2>
           </Link>
         </nav>
       </section>

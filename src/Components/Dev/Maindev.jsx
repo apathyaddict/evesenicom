@@ -5,7 +5,7 @@ const Maindev = () => {
   return (
     <div
       name="home"
-      className="flex h-screen lg:flex-row md:flex-col sm:flex-col items-center justify-center mb-2 lg:mb-0 
+      className="flex h-screen lg:flex-row md:flex-col sm:flex-col items-center justify-center mb-2 
       "
     >
       <div
@@ -36,8 +36,12 @@ const Maindev = () => {
               </h2>
               <div className="lg:text-lg md:text-sm sm:text-sm text-sm">
                 <p>
-                  With a passion for art, culture and learning. Here you will
-                  find{" "}
+                  With a passion for art, culture and learning. I have a
+                  background in history and teaching. My love for the past
+                  colors all my creations.{" "}
+                </p>
+                <p>
+                  Here you will find{" "}
                   <em className="text-orange-500">
                     {" "}
                     my projects, my skills, and everything coding related.{" "}
