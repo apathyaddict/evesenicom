@@ -35,8 +35,7 @@ const ContactDivArt = ({ contactPage }) => {
           </p>
           <p className="p-3">
             <FaEnvelope className="inline mr-2" />
-            <a href="mailto:your-email@example.com">email</a>
-            {/* //TODO */}
+            <a href="eveseniart@gmail.com">email</a>
           </p>
         </div>
       </div>

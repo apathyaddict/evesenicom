@@ -6,6 +6,10 @@ export default {
       colors: {
         beige: "#f7f5ee",
         darkbeige: "#636458",
+        bluegreen: "#32CCBC",
+      },
+      height: {
+        84: "22rem", // Adjust the size as needed
       },
     },
   },

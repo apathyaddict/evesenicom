@@ -18,39 +18,25 @@ const Navbardev = () => {
 
         <nav className="w-full">
           <ul className="dev-nav hidden md:flex items-center w-3/4 mx-auto justify-around py-4 text-slate-700">
-            <li>
-              <ScrollLink
-                activeClass="active"
-                to="home"
-                smooth={true}
-                offset={50}
-              >
-                Home
+            <li className="nav-li hover:font-bold">
+              <Link to="/"> Home</Link>
+            </li>
+            <li className="nav-li ">
+              <ScrollLink to="projects" spy={true} smooth={true} duration={500}>
+                Projects
               </ScrollLink>
             </li>
-            <li>
+            <li className="nav-li ">
+              Contact
               <ScrollLink
-                activeClass="active"
-                to="projects"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500}
-              >
-                Projects
-              </ScrollLink>
+              ></ScrollLink>
             </li>
-            <ScrollLink
-              // activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              <li>Contact</li>
-            </ScrollLink>
-            <li>
+            <li className="nav-li ">
               <Link to="/art">Art Portfolio</Link>
             </li>
           </ul>
@@ -71,19 +57,15 @@ const Navbardev = () => {
             : "absolute top-0 right-0 h-screen w-full flex flex-col justify-center items-center bg-beige text-slate-700"
         }
       >
-        <li className="py-6 text-4xl">Home</li>
-
-        <ScrollLink
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={50}
-          duration={500}
-        >
-          <li className="py-6 text-4xl">Projects</li>
+        <Link to="/">
+          <li className="py-6 text-4xl">Home</li>
+        </Link>
+        <ScrollLink to="projects" spy={true} smooth={true}>
+          <li className="py-6 text-4xl cursor-pointer">Projects</li>
         </ScrollLink>
-        <li className="py-6 text-4xl">Contact</li>
+        <ScrollLink to="contact" spy={true} smooth={true}>
+          <li className="py-6 text-4xl cursor-pointer">Contact</li>
+        </ScrollLink>
         <Link to="/art">
           <li className="py-6 text-4xl">Art</li>
         </Link>

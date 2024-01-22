@@ -4,7 +4,7 @@ export const data = [
     name: "Booked: Book Sharing App",
     description: "React, Express, MongoDB",
     image:
-      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/rv5yqgl3s33gizngoegz",
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/m0vny2c0ilkg2xaposnd",
     github: "https://github.com/apathyaddict/FullAppBookExchangeFE",
     live: "https://booked-omega.vercel.app/",
   },
@@ -12,15 +12,17 @@ export const data = [
     id: 2,
     name: "Typescript Notes App",
     description: "Typescript, Material UI, React",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/agqfkgqxuoqkwgxpynic",
     github: "https://github.com/apathyaddict/TypescriptNotes",
-    live: " https://lnkd.in/gDhAMEGC",
+    live: " https://main--whimsical-shortbread-0a06fa.netlify.app",
   },
   {
     id: 3,
     name: "Weather APP",
     description: "Angular, API, Typescript",
-    image: "",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/srpdybudiplzqacvdamp",
     github: "https://github.com/apathyaddict/AngWeatherApp",
     live: "",
   },
@@ -28,23 +30,26 @@ export const data = [
     id: 4,
     name: "Route Aware: crime Prevention",
     description: "React, Google Map API, Chakra, Chart.JS",
-    image: "RealEst",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/fczguqhjydmuw7g4jy1v",
     github: "https://github.com/apathyaddict/RouteAware",
     live: "",
   },
   {
     id: 5,
-    name: "React JS Application",
-    description: "",
-    image: "RealEst",
-    github: "",
-    live: "",
+    name: "Portofolio Website",
+    description: "React, Tailwind, libraries",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/mxxnuu1cgn2i3rl5ihkr",
+    github: "https://github.com/apathyaddict/evesenicom",
+    live: "www.eveseni.com/art",
   },
   {
     id: 6,
     name: "AWS Server",
     description: "serverless AWS lambda function, AMA API ",
-    image: "RealEst",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/xxhznexv3grtyr2nv7vh",
     github: "https://github.com/apathyaddict/lambdaserverAskB",
     live: "",
   },
