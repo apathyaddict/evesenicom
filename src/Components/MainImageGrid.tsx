@@ -4,13 +4,13 @@ import "../CSS/gallery.css";
 import { IoMdClose } from "react-icons/io";
 
 const MainImageGrid = () => {
-  const [modal, setmodal] = useState(false);
+  const [modal, setModal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState({});
 
   const getImg = (item) => {
     if (window.innerWidth > 768) {
       setTempImgSrc(item);
-      setmodal(true);
+      setModal(true);
     }
   };
   return (
@@ -24,7 +24,7 @@ const MainImageGrid = () => {
 
               <img src={tempImgSrc.image} />
             </div>
-            <IoMdClose onClick={() => setmodal(false)} />
+            <IoMdClose onClick={() => setModal(false)} />
           </>
         )}
       </div>
