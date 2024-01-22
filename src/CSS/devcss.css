@@ -4,3 +4,16 @@
 
     font-family: 'Comfortaa', sans-serif;
 }
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(to bottom,
+            #FFAA85,
+            #FD6585) !important;
+}
