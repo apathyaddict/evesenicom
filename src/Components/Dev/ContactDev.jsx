@@ -45,7 +45,7 @@ const ContactDev = () => {
                 </span>
               </a>
               <a
-                href="mailto:eveseniart@gmail.com"
+                href="mailto:arteveseni@gmail.com"
                 target="_blank"
                 className="hover:scale-125 hover:text-bluegreen"
               >

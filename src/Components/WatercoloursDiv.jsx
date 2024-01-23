@@ -36,6 +36,12 @@ const WatercolourGallery = () => {
           );
         })}
       </div>
+      <div>
+        <p>
+          Not photoshop or AI involved all Pcitures are photographed by me, with
+          real objects{" "}
+        </p>
+      </div>
     </>
   );
 };
