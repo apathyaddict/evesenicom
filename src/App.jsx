@@ -21,7 +21,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/evesenicom">
       <Routes>
         <Route
           path="/"
