@@ -4,7 +4,7 @@ const Maindev = () => {
   return (
     <div
       name="home"
-      className="flex h-screen lg:flex-row md:flex-col sm:flex-col items-center justify-center mb-2 
+      className="flex h-full lg:m-20 lg:flex-row md:flex-col sm:flex-col items-center justify-center mb-2 
       "
     >
       <div
@@ -25,7 +25,7 @@ const Maindev = () => {
             <p className="lg:pb-4 pb-2 mt-2 lg:text-xl md:text-lg sm:text-sm text-sm">
               Hello, I'm
             </p>
-            <h1 className="lg:text-6xl md:text-5xl sm:text-5xl text-4xl text-slate-700">
+            <h1 className="lg:text-[3.3rem] md:text-5xl sm:text-5xl text-4xl text-slate-700">
               Ève Aimée Seni
             </h1>
 
