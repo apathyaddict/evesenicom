@@ -39,6 +39,18 @@ const PaintingGallery = () => {
           </div>
         ))}
       </div>
+
+      {/* //disclaimer */}
+      <div className=" flex flex-center justify-center items-center m-10  ">
+        <p className="uppercase text-md font-medium text-slate-600">
+          Not for printing or resale.
+        </p>
+
+        <p className="m-2 text-md text-slate-600">
+          Do not repost and do not appropriate art as your own. Remember to
+          always credit artists.
+        </p>
+      </div>
     </>
   );
 };

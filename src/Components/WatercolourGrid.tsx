@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "../CSS/gallery.css";
 import { IoMdClose } from "react-icons/io";
 
-const MainImageGrid = () => {
+const WatercolourGrid = () => {
   const [modal, setModal] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState({});
 
@@ -48,8 +48,15 @@ const MainImageGrid = () => {
           </div>
         ))}
       </div>
+
+      <div className=" flex flex-center justify-center items-center m-4">
+        <p>
+          No photoshop or AI involved. © All Pictures are photographed by me,
+          with real objects. Please do not appropriate.
+        </p>
+      </div>
     </>
   );
 };
 
-export default MainImageGrid;
+export default WatercolourGrid;

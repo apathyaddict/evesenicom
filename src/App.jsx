@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBarArt from "./Components/NavBarArt";
-import MainImageGrid from "./Components/MainImageGrid";
+import WatercolourGrid from "./Components/WatercolourGrid";
+
 import PaintingGallery from "./Components/PaintingGallery";
-import WatercolourGallery from "./Components/WatercoloursDiv";
+// import WatercolourGallery from "./Components/WatercoloursDiv";
 import LandingPage from "./Pages/LandingPage";
 import HomeDev from "./Pages/HomeDev";
 import Navbardev from "./Components/Dev/Navbardev";
@@ -39,7 +40,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<HomeArt {...{ contactPage }} />} />
                 {/* <Route path="/prints" element={<WatercolourGallery />} /> */}
-                <Route path="/prints" element={<MainImageGrid />} />
+                <Route path="/prints" element={<WatercolourGrid />} />
                 <Route path="/paintings" element={<PaintingGallery />} />
               </Routes>
             </>
