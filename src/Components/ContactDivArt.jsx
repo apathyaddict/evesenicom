@@ -34,7 +34,7 @@ const ContactDivArt = ({ contactPage }) => {
           <div className="hover:text-darkbeige hover:scale-125">
             <p className="p-3">
               <FaEnvelope className="inline mr-2" />
-              <a href="eveseniart@gmail.com">email</a>
+              <a href="arteveseni@gmail.com">email</a>
             </p>
           </div>
         </div>

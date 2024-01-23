@@ -30,24 +30,23 @@ const Maindev = () => {
             </h1>
 
             <div className=" flex justify-between items-center flex-col m-4  md:w-3/4 lg:w-full">
-              <h2 className="lg:text-2xl md:text-2xl sm:text-md text-lg mb-3 text-slate-400 font-bold md:items-center sm:items-center ">
+              <h2
+                className="lg:text-2xl md:text-2xl sm:text-md text-lg mb-3 font-bold md:items-center sm:items-center 
+              text-slate-400 bg-gradient-to-r from-teal-200 to-teal-500 bg-clip-text text-transparent
+              "
+              >
                 I'm a fullstack developer
               </h2>
-              <div className="lg:text-lg md:text-sm sm:text-sm text-sm">
+              <div className="lg:text-md md:text-sm sm:text-sm text-sm mt-8">
                 <p>
                   With a passion for art, culture and learning. I have a
                   background in history and teaching. My love for the past
                   colors all my creations.{" "}
                 </p>
-                <p>
-                  Here you will find{" "}
-                  <em className="text-orange-500">
-                    {" "}
-                    my projects, my skills, and everything coding related.{" "}
-                  </em>
-                </p>
-                <p>
-                  If you want to discover my paintings head to the art section.
+                <p className="mt-2">
+                  Here you will find my projects, my skills, and everything
+                  coding related. If you want to discover my paintings head to
+                  the art section.
                 </p>
               </div>
             </div>
