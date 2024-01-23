@@ -53,4 +53,23 @@ export const data = [
     github: "https://github.com/apathyaddict/lambdaserverAskB",
     live: "",
   },
+  {
+    id: 7,
+    name: "Tweet App",
+    description: "React, FireBase, Firestore ",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/c_crop,h_1.00,w_0.80/EvePortfolio/Projects/qmjr41zxuozfbuwqp9o4.jpg",
+    github:
+      "https://github.com/apathyaddict/TweetMockAppReact/blob/main/README.md",
+    live: "https://micro-blog-f57a3.web.app/register",
+  },
+  {
+    id: 8,
+    name: "Users and Data Backend End",
+    description: "Express, MongoDB, Auth ",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/xxhznexv3grtyr2nv7vh",
+    github: "https://github.com/apathyaddict/FullAppBookExchangeBE",
+    live: "",
+  },
 ];
