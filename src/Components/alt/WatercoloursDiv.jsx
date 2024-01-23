@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../CSS/gallery.css";
 import { IoMdClose } from "react-icons/io";
-import { watercolours } from "../data/watercolours";
+import { watercolours } from "../../data/watercolours";
 
 //ALTERNATIVE COMPONENT - with different layout in case I want to change the gallery look
 
@@ -35,12 +35,6 @@ const WatercolourGallery = () => {
             </div>
           );
         })}
-      </div>
-      <div>
-        <p>
-          Not photoshop or AI involved all Pcitures are photographed by me, with
-          real objects{" "}
-        </p>
       </div>
     </>
   );
