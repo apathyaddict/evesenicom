@@ -57,22 +57,20 @@ const CarousselSmall = () => {
         <div className="my-5 mx-20">
           <Slider {...settings}>
             {carouselItems.map((img) => (
-              <>
-                <div
-                  key={img.id}
-                  className="flex flex-col items-center justify-center"
-                >
-                  <img
-                    src={img.image}
-                    alt=""
-                    className="object-cover h-[250px] w-[250px] p-4
+              <div
+                key={img.id}
+                className="flex flex-col items-center justify-center"
+              >
+                <img
+                  src={img.image}
+                  alt=""
+                  className="object-cover h-[250px] w-[250px] p-4
                   transition-transform transform hover:scale-110"
-                  />
-                </div>
-                <p className="align-middle text-center  text-slate-600">
+                />
+                <p className="align-middle text-center text-slate-600">
                   {img.description}
                 </p>
-              </>
+              </div>
             ))}
           </Slider>
         </div>

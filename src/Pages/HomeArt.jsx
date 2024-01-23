@@ -6,7 +6,7 @@ const HomeArt = ({ contactPage }) => {
     <>
       <div className="flex flex-col align-start h-full bg-beige">
         <div
-          className="flex-1 h-full mainImage"
+          className="flex-1 h-full mainImage no-copy-img"
           style={{
             backgroundImage: 'url("/public/images/mainBG.JPG")',
             backgroundSize: "cover",
@@ -26,7 +26,7 @@ const HomeArt = ({ contactPage }) => {
         </div>
 
         <div
-          className="flex-1 h-1/2 imageBanner overflow-auto"
+          className="flex-1 h-1/2 imageBanner overflow-auto no-copy-img"
           style={{
             backgroundImage: 'url("/public/images/mainbanner.png")',
             backgroundSize: "cover",

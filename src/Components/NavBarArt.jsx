@@ -30,7 +30,11 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
         {/* MOBILE MENU */}
         {navDev && (
           <ul className="lg:hidden absolute top-0 right-0 h-screen w-full flex flex-col justify-center items-center bg-beige text-slate-700 ">
-            <Link to="/art" className="hover:font-bold py-6 text-4xl">
+            <Link
+              to="/art"
+              onClick={handleLinkClick}
+              className="hover:font-bold py-6 text-4xl"
+            >
               Home
             </Link>
 

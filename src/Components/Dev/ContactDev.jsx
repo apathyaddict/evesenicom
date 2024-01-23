@@ -25,8 +25,8 @@ const ContactDev = () => {
               <span> Bilingue : anglais / francais</span>
             </h2>
           </div>
-          <div className="flex-1  flex   justify-start   items-center m-4">
-            <div className="flex-1 flex flex-row justify-center ">
+          <div className="flex-1  flex   justify-center items-center m-4 border-red-500">
+            <div className="flex-1 flex flex-row justify-end ">
               <a
                 href="https://www.linkedin.com/in/eveseni/"
                 className="hover:scale-125 hover:text-bluegreen"

@@ -51,6 +51,10 @@ button {
   font-family: 'Comfortaa', sans-serif;
 }
 
+.no-copy-img {
+  pointer-events: none;
+}
+
 .imageEve {
   width: 300px;
   height: 300px;

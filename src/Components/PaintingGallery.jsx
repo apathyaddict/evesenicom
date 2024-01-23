@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS/gallery.css";
 import { IoMdClose } from "react-icons/io";
 import { paintings } from "../data/paintings";
@@ -13,8 +13,20 @@ const PaintingGallery = () => {
       setModal(true);
     }
   };
-
   const sortedPaintings = paintings.slice().sort((a, b) => a.id - b.id);
+
+  // PREVENT RIGHT CLICK
+  useEffect(() => {
+    document.addEventListener("contextmenu", handleContextMenu);
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
+
+  const handleContextMenu = (e) => {
+    e.preventDefault();
+    console.log("Right click prevent to protect my art");
+  };
 
   return (
     <>
@@ -25,7 +37,7 @@ const PaintingGallery = () => {
             <div className="flex justify-center items-center w-3/4 h-3/4">
               <p className="m-2 text-lg">{tempImgSrc.name}</p>
 
-              <img src={tempImgSrc.image} />
+              <img className="no-copy-img" src={tempImgSrc.image} />
             </div>
             <IoMdClose onClick={() => setModal(false)} />
           </>
@@ -35,7 +47,12 @@ const PaintingGallery = () => {
       <div className="galleryPainting w-3/4  mx-auto pt-6">
         {sortedPaintings.map((item) => (
           <div className="pics" key={item.id} onClick={() => getImg(item)}>
-            <img src={item.image} alt={item.name} style={{ width: "100%" }} />
+            <img
+              className="no-copy-img"
+              src={item.image}
+              alt={item.name}
+              style={{ width: "100%" }}
+            />
           </div>
         ))}
       </div>
