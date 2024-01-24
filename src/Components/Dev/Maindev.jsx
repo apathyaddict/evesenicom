@@ -14,7 +14,7 @@ const Maindev = () => {
       >
         <div className="flex-1 h-full flex justify-center items-center">
           <img
-            src="/images/eve.JPG"
+            src="dist/images/eve.JPG"
             alt=""
             className="rounded-full object-cover shadow-md imageEve mb-5"
           />

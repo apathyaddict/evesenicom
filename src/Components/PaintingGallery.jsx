@@ -15,18 +15,18 @@ const PaintingGallery = () => {
   };
   const sortedPaintings = paintings.slice().sort((a, b) => a.id - b.id);
 
-  // PREVENT RIGHT CLICK
-  useEffect(() => {
-    document.addEventListener("contextmenu", handleContextMenu);
-    return () => {
-      document.removeEventListener("contextmenu", handleContextMenu);
-    };
-  }, []);
+  // // PREVENT RIGHT CLICK
+  // useEffect(() => {
+  //   document.addEventListener("contextmenu", handleContextMenu);
+  //   return () => {
+  //     document.removeEventListener("contextmenu", handleContextMenu);
+  //   };
+  // }, []);
 
-  const handleContextMenu = (e) => {
-    e.preventDefault();
-    console.log("Right click prevent to protect my art");
-  };
+  // const handleContextMenu = (e) => {
+  //   e.preventDefault();
+  //   console.log("Right click prevent to protect my art");
+  // };
 
   return (
     <>
@@ -44,11 +44,11 @@ const PaintingGallery = () => {
         )}
       </div>
 
-      <div className="galleryPainting w-3/4  mx-auto pt-6">
+      <div className="galleryPainting w-3/4  mx-auto pt-6 ">
         {sortedPaintings.map((item) => (
           <div className="pics" key={item.id} onClick={() => getImg(item)}>
             <img
-              className="no-copy-img"
+              className="no-copy-img py-2"
               src={item.image}
               alt={item.name}
               style={{ width: "100%" }}

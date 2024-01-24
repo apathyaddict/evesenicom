@@ -11,7 +11,7 @@ const ContactDivArt = ({ contactPage }) => {
     >
       <img
         className="imageBargue no-copy-img  h-1/2"
-        src="/public/images/testbargue.jpg"
+        src="dist/images/testbargue.jpg"
       />
 
       <div className="flex-1 text-slate-700 flex flex-col justify-center items-center">

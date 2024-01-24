@@ -26,16 +26,21 @@ const WatercolourGrid = () => {
     e.preventDefault();
     console.log("Right click prevent to protect my art");
   };
+
   return (
     <>
       <div className={modal ? "modal open" : "modal"}>
         {tempImgSrc && (
           <>
-            {" "}
-            <div className="flex justify-center items-center w-3/4">
+            <div
+              className="flex justify-center items-center w-3/4
+            
+            
+            "
+            >
               <p className=" m-2 text-lg">{tempImgSrc.name}</p>
 
-              <img className="no-copy-img" src={tempImgSrc.image} />
+              <img className="no-copy-img " src={tempImgSrc.image} />
             </div>
             <IoMdClose onClick={() => setModal(false)} />
           </>
@@ -49,13 +54,15 @@ const WatercolourGrid = () => {
         {watercolours.map((item) => (
           <div
             key={item.id}
-            className=" align-left md:cursor-pointer lg:w-1/4 lg:h-1/4 sm:w-1/2 sm:h-1/2 md:w-1/3 md:h-1/3  p-2 aspect-square"
+            className=" align-left md:cursor-pointer lg:w-1/4 lg:h-1/4 sm:w-1/2 sm:h-1/2 md:w-1/3 md:h-1/3  aspect-square
+           
+            "
             onClick={() => getImg(item)}
           >
             <img
               src={item.image}
               alt={item.name}
-              className="w-full h-full object-cover overlay no-copy-img"
+              className="w-full p-1 h-full object-cover overlay no-copy-img "
               style={{ objectFit: "cover", objectPosition: "center center" }}
             />
           </div>
