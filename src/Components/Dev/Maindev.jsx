@@ -1,6 +1,6 @@
 import React from "react";
 
-const Maindev = () => {
+const Maindev = ({ eveImage }) => {
   return (
     <div
       name="home"
@@ -14,7 +14,7 @@ const Maindev = () => {
       >
         <div className="flex-1 h-full flex justify-center items-center">
           <img
-            src="./dist/images/eve.JPG"
+            src={eveImage}
             alt=""
             className="rounded-full object-cover shadow-md imageEve mb-5"
           />

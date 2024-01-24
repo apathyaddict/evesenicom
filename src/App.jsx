@@ -20,6 +20,9 @@ function App() {
     });
   };
 
+  const eveImage =
+    "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Site%20Elements/aapazsdwtefo0xaovfqa";
+
   return (
     <BrowserRouter basename="/evesenicom">
       <Routes>
@@ -27,7 +30,7 @@ function App() {
           path="/"
           element={
             <>
-              <LandingPage />
+              <LandingPage {...{ eveImage }} />
             </>
           }
         />
@@ -53,7 +56,7 @@ function App() {
             <>
               <Navbardev />
               <Routes>
-                <Route path="/" element={<HomeDev />} />
+                <Route path="/" element={<HomeDev {...{ eveImage }} />} />
               </Routes>
             </>
           }

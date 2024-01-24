@@ -8,7 +8,8 @@ const HomeArt = ({ contactPage }) => {
         <div
           className="flex-1 h-full mainImage no-copy-img"
           style={{
-            backgroundImage: 'url("./dist/images/mainBG.JPG")',
+            backgroundImage:
+              'url("https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Site%20Elements/rgf7retr6bbmukrubgtn")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -28,7 +29,8 @@ const HomeArt = ({ contactPage }) => {
         <div
           className="flex-1 h-1/2 imageBanner overflow-auto no-copy-img"
           style={{
-            backgroundImage: 'url("./dist/images/mainbanner.png")',
+            backgroundImage:
+              'url("https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Site%20Elements/ogfx6fjvltuofrw8oqgi")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

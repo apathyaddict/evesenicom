@@ -5,10 +5,10 @@ import Maindev from "../Components/Dev/Maindev";
 import Projects from "../Components/Dev/Projects";
 import Contact from "../Components/Dev/ContactDev";
 
-const HomeDev = () => {
+const HomeDev = ({ eveImage }) => {
   return (
     <div>
-      <Maindev />
+      <Maindev {...{ eveImage }} />
       <Projects />
       <Contact />
       <footer className="flex-1 text-slate-700 flex flex-col justify-center items-center bg-beige p-6 md:p-2">

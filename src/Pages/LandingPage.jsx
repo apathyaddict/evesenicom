@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 
 import TextTyped from "../Components/TextAnimation/TextTyped";
 
-const LandingPage = () => {
+const LandingPage = ({ eveImage }) => {
   return (
     <div className="flex h-screen items-center justify-center">
       <div className=" flex lg:flex-row md:flex-col sm:flex-col flex-col h-3/4 w-4/5">
         <div className="flex-1 h-full flex justify-center items-center">
           <img
-            src="./dist/images/eve.JPG"
+            src={eveImage}
             alt=""
             className="rounded-full object-cover shadow-md imageEve"
           />
