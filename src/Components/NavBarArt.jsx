@@ -38,13 +38,6 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
               Home
             </Link>
 
-            {({ isActive }) => (
-              <li className={isActive ? "nav-link-active" : "link nav-link"}>
-                {" "}
-                Home
-              </li>
-            )}
-
             <Link
               to="/art/prints"
               onClick={handleLinkClick}
@@ -91,11 +84,7 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
               <h2 className={isActive ? " font-bold" : ""}> Paintings</h2>
             )}
           </NavLink>
-          <Link
-            to="/art"
-            onClick={() => scrollToSection(contactPage)}
-            className="hover:font-bold"
-          >
+          <Link to="/art" className="hover:font-bold">
             <h2>Contact</h2>
           </Link>
 
