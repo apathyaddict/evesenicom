@@ -8,7 +8,7 @@ const HomeArt = ({ contactPage }) => {
         <div
           className="flex-1 h-full mainImage no-copy-img"
           style={{
-            backgroundImage: 'url("dist/images/mainBG.JPG")',
+            backgroundImage: 'url("./dist/images/mainBG.JPG")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -28,7 +28,7 @@ const HomeArt = ({ contactPage }) => {
         <div
           className="flex-1 h-1/2 imageBanner overflow-auto no-copy-img"
           style={{
-            backgroundImage: 'url("dist/images/mainbanner.png")',
+            backgroundImage: 'url("./dist/images/mainbanner.png")',
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
