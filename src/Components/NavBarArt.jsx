@@ -41,9 +41,9 @@ const NavBarArt = ({ scrollToSection, contactPage }) => {
             <Link
               to="/art/prints"
               onClick={handleLinkClick}
-              className="hover:font-bold py-6 text-4xl"
+              className="hover:font-bold py-6 text-4xl "
             >
-              Prints and Watercolours
+              Watercolours
             </Link>
             <Link
               to="/art/paintings"

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Navbardev = () => {
   const [navDev, setNavDev] = useState(false);
   const handleClick = () => setNavDev(!navDev);
+  const handleLinkClick = () => setNavDev(false);
 
   return (
     <section className="relative">
@@ -61,10 +62,20 @@ const Navbardev = () => {
         <Link to="/">
           <li className="py-6 text-4xl">Home</li>
         </Link>
-        <ScrollLink to="projects" spy={true} smooth={true}>
+        <ScrollLink
+          onClick={handleLinkClick}
+          to="projects"
+          spy={true}
+          smooth={true}
+        >
           <li className="py-6 text-4xl cursor-pointer">Projects</li>
         </ScrollLink>
-        <ScrollLink to="contactDev" spy={true} smooth={true}>
+        <ScrollLink
+          onClick={handleLinkClick}
+          to="contactDev"
+          spy={true}
+          smooth={true}
+        >
           <li className="py-6 text-4xl cursor-pointer">Contact</li>
         </ScrollLink>
         <Link to="/art">
