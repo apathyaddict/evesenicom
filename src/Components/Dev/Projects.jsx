@@ -40,6 +40,7 @@ const Projects = () => {
                   {/* eslint-disable-next-line */}
                   <a href={item.github} target="_blank">
                     <button
+                      target="_blank"
                       className="text-center text-white rounded-full px-4 py-3 m-2
                        bg-slate-700 font-bold text-lg hover:shadow-lg hover:bg-slate-600"
                     >
@@ -50,6 +51,7 @@ const Projects = () => {
                   {item.live && (
                     <a href={item.live} target="_blank">
                       <button
+                        target="_blank"
                         className="text-center rounded-full px-5 py-3 m-2
                        bg-slate-700 text-white font-bold text-lg hover:shadow-lg hover:bg-slate-600"
                       >

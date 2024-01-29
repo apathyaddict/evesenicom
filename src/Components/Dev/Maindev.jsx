@@ -22,9 +22,9 @@ const Maindev = ({ eveImage }) => {
 
         <div className=" flex-1 h-full flex  justify-center items-center lg:p-4 ">
           <div className="flex flex-col justify-center items-center m-3 w-full ">
-            <p className="lg:pb-4 pb-2 mt-2 lg:text-xl md:text-lg sm:text-sm text-sm">
+            <h2 className="lg:pb-4 pb-2 mt-2 lg:text-xl md:text-lg sm:text-sm text-sm  text-slate-700">
               Hello, I'm
-            </p>
+            </h2>
             <h1 className="lg:text-[3.3rem] md:text-5xl sm:text-5xl text-4xl text-slate-700">
               Ève Aimée Seni
             </h1>
@@ -37,17 +37,17 @@ const Maindev = ({ eveImage }) => {
               >
                 I'm a fullstack developer
               </h2>
-              <div className="lg:text-md md:text-sm sm:text-sm text-sm mt-4 ">
-                <p>
+              <div className="lg:text-md md:text-sm sm:text-sm text-sm mt-4  text-slate-700">
+                <h2>
                   With a passion for art, culture and learning. I have a
                   background in history and teaching. My love for the past
                   colors all my creations.{" "}
-                </p>
-                <p className="mt-2">
+                </h2>
+                <h2 className="mt-2  text-slate-700">
                   Here you will find my projects, my skills, and everything
                   coding related. If you want to discover my paintings head to
                   the art section.
-                </p>
+                </h2>
               </div>
             </div>
           </div>

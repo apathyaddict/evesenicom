@@ -176,10 +176,9 @@ export const watercolours = [
   },
   {
     id: 26,
-    name: "  Sydney ",
-
+    name: "Camoes, Mouros & portugal",
     image:
-      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/jwsmnwv7dg459vjiwlx1 ",
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/a3uvqsdphzklenznyucv",
   },
   {
     id: 27,
@@ -204,6 +203,48 @@ export const watercolours = [
   },
   {
     id: 30,
+    name: "Evora",
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/sy2scmsrm5efmtdcx3zu",
+  },
+
+  {
+    id: 31,
+    name: " To The New World - Bélem, Portugal ",
+
+    image:
+      " https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/zq5vcv9jhnqj2boablsw ",
+  },
+  {
+    id: 32,
+    name: " Plaza D'Espagna- Sevilla ",
+
+    image:
+      " https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/nwy2b921vqvg8ejnwajs ",
+  },
+  {
+    id: 33,
+    name: " Alhambra ",
+
+    image:
+      " https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/vjmj3v6q4u2onbyoduuo ",
+  },
+  {
+    id: 34,
+    name: " Sing O Muse  ",
+
+    image:
+      " https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/brob51nwa2o967ehrj2u",
+  },
+  {
+    id: 35,
+    name: "  Sydney ",
+
+    image:
+      "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Watercolours/jwsmnwv7dg459vjiwlx1 ",
+  },
+  {
+    id: 36,
     name: " Yael  ",
 
     image:
