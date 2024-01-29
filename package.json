@@ -2,7 +2,7 @@
   "name": "eveseni",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://apathyaddict.github.io/evesenicom",
+  "homepage": "https://apathyaddict.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",

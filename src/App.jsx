@@ -24,7 +24,7 @@ function App() {
     "https://res.cloudinary.com/dc2qd4mzh/image/upload/f_auto,q_auto/v1/EvePortfolio/Site%20Elements/aapazsdwtefo0xaovfqa";
 
   return (
-    <BrowserRouter basename="/evesenicom">
+    <BrowserRouter>
       <Routes>
         <Route
           path="/"
