@@ -7,8 +7,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="flex align-center justify-center w-full project-div text-slate-700  "
-    >
+      className="flex align-center justify-center w-full project-div text-slate-700">
       <div className="flex-1 max-w-[1000px] mx-auto p-4 flex flex-col justify-center h-full mb-4">
         <div className="pb-8">
           <h1 className="text-4xl  inline border-b-4  text-slate-700 border-bluegreen">
@@ -26,8 +25,7 @@ const Projects = () => {
                 backgroundSize: "cover",
               }}
               className="shadow-md group container 
-              flex justify-center text-center items-center mx-auto content-div "
-            >
+              flex justify-center text-center items-center mx-auto content-div ">
               {/* Hover effect for images */}
               <div className="opacity-0 group-hover:opacity-100 p-1">
                 <span className="text-2xl text-white bold  tracking-wider ">
@@ -42,8 +40,7 @@ const Projects = () => {
                     <button
                       target="_blank"
                       className="text-center text-white rounded-full px-4 py-3 m-2
-                       bg-slate-700 font-bold text-lg hover:shadow-lg hover:bg-slate-600"
-                    >
+                       bg-slate-700 font-bold text-lg hover:shadow-lg hover:bg-slate-600">
                       Code
                     </button>
                   </a>
@@ -53,8 +50,7 @@ const Projects = () => {
                       <button
                         target="_blank"
                         className="text-center rounded-full px-5 py-3 m-2
-                       bg-slate-700 text-white font-bold text-lg hover:shadow-lg hover:bg-slate-600"
-                      >
+                       bg-slate-700 text-white font-bold text-lg hover:shadow-lg hover:bg-slate-600">
                         Live
                       </button>
                     </a>
