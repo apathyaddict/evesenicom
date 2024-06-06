@@ -21,6 +21,7 @@ import {
 } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { AiOutlineConsoleSql } from "react-icons/ai";
+import { RiNextjsLine } from "react-icons/ri";
 
 const skills = [
   { icon: <FaHtml5 />, name: "Html", color: "#E44D26" },
@@ -33,6 +34,7 @@ const skills = [
   { icon: <FaReact />, name: "React", color: "#61DAFB" },
   { icon: <FaVuejs />, name: "Vue", color: "#4FC08D" },
   { icon: <FaAngular />, name: "Angular", color: "#DD0031" },
+  { icon: <RiNextjsLine />, name: "NextJs", color: "#black" },
   { icon: <FaNodeJs />, name: "Node", color: "#68A063" },
   { icon: <AiOutlineConsoleSql />, name: "SQL", color: "#336791" },
   { icon: <SiMongodb />, name: "MongoDB", color: "#47A248" },
@@ -47,16 +49,16 @@ const Skills = () => {
   return (
     <section
       name="skills"
-      className="flex flex-col align-center justify-center w-full  text-slate-700  h-full  mt-4">
-      <div className="flex flex-row max-w-[1000px] p-4  mx-auto flex-1 justify-start  h-full w-full ">
+      className="flex flex-col align-center justify-center w-full  text-slate-700  h-full  mt-4 ">
+      <div className="flex flex-row max-w-[1000px] p-4  mx-auto flex-1 justify-start  h-full w-full bord">
         <h1 className="text-4xl  inline border-b-4  text-slate-700 border-bluegreen">
           Skills
         </h1>
       </div>
 
       <div
-        className="flex-1 justify-start align-middle grid h-[250px] lg:grid-cols-8 sm:grid-cols-5 md:grid-cols-6 grid-cols-5 gap-6 mx-auto  w-full lg:w-3/4 mt-6 
-        p-2 md:p-0">
+        className="flex-1 justify-center align-middle grid h-[250px] lg:grid-cols-8 sm:grid-cols-5 md:grid-cols-6 grid-cols-5 gap-6 mx-auto  w-full lg:w-3/4 mt-6 
+        p-2 md:p-10 ">
         {skills.map((item, index) => (
           <div key={index} className="flex flex-col m-2  ">
             <div
